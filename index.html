@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>記事タイアップご提案書｜Lithap化粧品 × エス通WEB</title>
+<style>
+:root{
+  --bg:#FFF5F7;--white:#fff;--accent:#D64E82;--accent2:#B02E60;
+  --light:#FFE8F0;--pale:#FFF0F5;--text:#2D1A25;--sub:#7A4D5F;
+  --border:#F0C8D8;--shadow:0 6px 24px rgba(214,78,130,.10);
+  --grad:linear-gradient(135deg,#E8306A 0%,#F07AAB 50%,#FABDD3 100%);
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic","Meiryo",sans-serif;
+  background:var(--bg);color:var(--text);font-size:14px;line-height:1.85;
+  word-break:auto-phrase;line-break:strict;}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px 100px;}
+
+/* ===== HERO ===== */
+.hero{
+  background:var(--grad);padding:72px 40px 56px;text-align:center;
+  position:relative;overflow:hidden;border-radius:0 0 32px 32px;margin-bottom:52px;
+}
+.hero::before,.hero::after{
+  content:'';position:absolute;border-radius:50%;background:rgba(255,255,255,.08);}
+.hero::before{width:360px;height:360px;top:-100px;right:-80px;}
+.hero::after{width:260px;height:260px;bottom:-80px;left:-60px;}
+.hero-eyebrow{
+  color:rgba(255,255,255,.8);font-size:11px;letter-spacing:.25em;font-weight:600;
+  margin-bottom:14px;position:relative;z-index:1;}
+.hero h1{
+  font-size:36px;font-weight:800;color:#fff;line-height:1.35;
+  margin-bottom:10px;position:relative;z-index:1;}
+.hero-product{
+  font-size:17px;color:rgba(255,255,255,.9);font-weight:600;
+  margin-bottom:20px;position:relative;z-index:1;}
+.hero-meta{
+  font-size:12px;color:rgba(255,255,255,.65);margin-bottom:28px;
+  position:relative;z-index:1;}
+.hero-logo{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:11px;color:rgba(255,255,255,.65);position:relative;z-index:1;}
+.hero-logo img{height:22px;object-fit:contain;opacity:.85;vertical-align:middle;}
+
+/* ===== SECTION HEADERS ===== */
+.sec-head{
+  display:flex;align-items:center;gap:12px;margin-bottom:28px;}
+.sec-num{
+  background:var(--accent);color:#fff;font-size:11px;font-weight:700;
+  padding:3px 10px;border-radius:20px;white-space:nowrap;letter-spacing:.06em;}
+.sec-head h2{
+  font-size:22px;font-weight:800;color:var(--text);
+  border-left:5px solid var(--accent);padding-left:14px;line-height:1.3;}
+section{margin-bottom:60px;}
+
+/* ===== STATS STRIP ===== */
+.stats-row{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:48px;}
+.stat-card{
+  background:var(--white);border-radius:18px;padding:30px 20px;text-align:center;
+  border:1px solid var(--border);box-shadow:var(--shadow);}
+.stat-n{font-size:50px;font-weight:800;color:var(--accent);line-height:1;}
+.stat-unit{font-size:22px;}
+.stat-label{font-size:12px;color:var(--sub);margin-top:8px;line-height:1.5;}
+
+/* ===== CARDS ===== */
+.cards-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+.cards-2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;}
+.card{
+  background:var(--white);border-radius:16px;padding:24px 20px;
+  border:1px solid var(--border);box-shadow:var(--shadow);}
+.card-num{
+  font-size:38px;font-weight:800;color:var(--accent);line-height:1;margin-bottom:4px;}
+.card-title{font-size:14px;font-weight:700;color:var(--text);margin-bottom:6px;}
+.card-sub{font-size:12.5px;color:var(--sub);line-height:1.6;}
+
+/* ===== AIDMA ===== */
+.aidma{display:flex;gap:6px;align-items:stretch;margin:24px 0;}
+.aidma-box{
+  flex:1;background:var(--white);border:1px solid var(--border);border-radius:14px;
+  padding:16px 10px;text-align:center;}
+.aidma-box.hot{background:var(--accent);border-color:var(--accent);}
+.aidma-letter{
+  width:40px;height:40px;border-radius:50%;background:var(--light);
+  color:var(--accent);font-size:20px;font-weight:800;
+  display:flex;align-items:center;justify-content:center;margin:0 auto 8px;}
+.aidma-box.hot .aidma-letter{background:rgba(255,255,255,.2);color:#fff;}
+.aidma-name{font-size:13px;font-weight:700;color:var(--text);margin-bottom:4px;}
+.aidma-box.hot .aidma-name{color:#fff;}
+.aidma-desc{font-size:11px;color:var(--sub);line-height:1.5;}
+.aidma-box.hot .aidma-desc{color:rgba(255,255,255,.8);}
+.aidma-tag{
+  margin-top:10px;display:inline-block;font-size:11px;font-weight:700;
+  padding:3px 9px;border-radius:20px;background:var(--pale);color:var(--accent2);}
+.aidma-box.hot .aidma-tag{background:rgba(255,255,255,.2);color:#fff;}
+.aidma-arrow{
+  align-self:center;font-size:18px;color:var(--accent);flex-shrink:0;padding:0 2px;}
+
+/* ===== TABLE ===== */
+table{width:100%;border-collapse:collapse;font-size:13px;margin:16px 0;}
+th,td{border:1px solid var(--border);padding:10px 13px;text-align:left;vertical-align:top;}
+th{background:var(--pale);color:var(--accent2);font-weight:700;}
+tr:nth-child(even) td{background:#FAFAFA;}
+.pri-h{color:var(--accent);font-weight:700;}
+.pri-m{color:#C07000;font-weight:600;}
+
+/* ===== ARTICLE CARDS ===== */
+.art-card{
+  background:var(--white);border-radius:18px;padding:28px 28px 24px;
+  border:1px solid var(--border);box-shadow:var(--shadow);margin-bottom:20px;
+  position:relative;overflow:hidden;}
+.art-card::before{
+  content:'';position:absolute;left:0;top:0;bottom:0;
+  width:5px;background:var(--accent);}
+.art-card.sub::before{background:var(--light);border-right:2px solid var(--accent);}
+.art-type{
+  font-size:11px;font-weight:700;letter-spacing:.15em;
+  color:var(--accent);margin-bottom:10px;}
+.art-title{
+  font-size:17px;font-weight:800;line-height:1.5;
+  color:var(--text);margin-bottom:14px;}
+.art-reason{
+  background:var(--pale);border-radius:12px;padding:14px 16px;
+  font-size:13px;color:var(--sub);line-height:1.75;margin-bottom:14px;}
+.art-reason strong{color:var(--text);}
+.kw-row{display:flex;flex-wrap:wrap;gap:7px;}
+.kw-tag{
+  background:var(--light);color:var(--accent2);font-size:11.5px;
+  font-weight:600;padding:4px 11px;border-radius:20px;}
+.art-img{
+  width:100%;border-radius:12px;height:160px;object-fit:cover;
+  margin-top:14px;display:block;background:var(--light);}
+
+/* ===== 5 STEPS ===== */
+.flow5{display:flex;gap:8px;align-items:flex-start;margin:24px 0;}
+.f5step{flex:1;text-align:center;}
+.f5circle{
+  width:60px;height:60px;background:var(--accent);border-radius:50%;
+  color:#fff;font-size:22px;font-weight:800;
+  display:flex;align-items:center;justify-content:center;margin:0 auto 10px;}
+.f5title{font-size:13px;font-weight:700;color:var(--text);line-height:1.4;margin-bottom:5px;}
+.f5sub{font-size:11.5px;color:var(--sub);line-height:1.5;}
+.f5arrow{font-size:22px;color:var(--accent);flex-shrink:0;padding-top:18px;}
+
+/* ===== LLMO BOX ===== */
+.llmo-box{
+  background:linear-gradient(135deg,var(--pale),var(--white));
+  border:2px solid var(--accent);border-radius:18px;
+  padding:28px 28px;margin:28px 0;}
+.llmo-title{font-size:15px;font-weight:800;color:var(--accent2);margin-bottom:14px;}
+.llmo-flow{display:flex;gap:12px;align-items:center;}
+.llmo-step{
+  flex:1;background:var(--white);border:1px solid var(--border);
+  border-radius:12px;padding:14px;text-align:center;font-size:12.5px;color:var(--sub);}
+.llmo-step strong{display:block;color:var(--text);font-size:13px;margin-bottom:4px;}
+.llmo-step.final{background:var(--accent);border-color:var(--accent);}
+.llmo-step.final strong,.llmo-step.final{color:#fff;}
+.llmo-arr{font-size:20px;color:var(--accent);flex-shrink:0;}
+
+/* ===== DIST FLOW ===== */
+.dist{display:flex;gap:12px;align-items:center;margin:24px 0;flex-wrap:wrap;}
+.dist-step{
+  flex:1;min-width:130px;background:var(--white);border:1px solid var(--border);
+  border-radius:16px;padding:20px 16px;text-align:center;}
+.dist-step.hl{background:var(--accent);border-color:var(--accent);}
+.d-icon{font-size:34px;margin-bottom:8px;}
+.d-name{font-size:13px;font-weight:700;color:var(--text);margin-bottom:4px;}
+.dist-step.hl .d-name{color:#fff;}
+.d-sub{font-size:11.5px;color:var(--sub);line-height:1.5;}
+.dist-step.hl .d-sub{color:rgba(255,255,255,.8);}
+.dist-arr{font-size:22px;color:var(--accent);flex-shrink:0;}
+
+/* ===== PLANS ===== */
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:28px 0;}
+.plan{
+  background:var(--white);border-radius:18px;padding:30px 20px;
+  text-align:center;border:2px solid var(--border);position:relative;}
+.plan.rec{border-color:var(--accent);}
+.rec-badge{
+  position:absolute;top:-14px;left:50%;transform:translateX(-50%);
+  background:var(--accent);color:#fff;font-size:11px;font-weight:700;
+  padding:4px 18px;border-radius:20px;white-space:nowrap;}
+.plan-name{font-size:14px;font-weight:800;letter-spacing:.1em;color:var(--text);margin-bottom:6px;}
+.plan-desc{font-size:12.5px;color:var(--sub);line-height:1.6;margin-bottom:18px;}
+.plan-price{font-size:38px;font-weight:800;color:var(--accent);line-height:1;margin-bottom:4px;}
+.plan-tax{font-size:12px;color:var(--sub);margin-bottom:18px;}
+.plan-gift{
+  background:var(--pale);border-radius:10px;padding:12px;
+  font-size:12px;color:var(--accent2);line-height:1.6;}
+.plan-orig{font-size:12px;color:#aaa;text-decoration:line-through;margin-bottom:4px;}
+
+/* ===== TIMELINE ===== */
+.tl{display:flex;gap:0;margin:28px 0;position:relative;}
+.tl::before{
+  content:'';position:absolute;top:28px;left:28px;right:28px;
+  height:3px;background:var(--light);}
+.tl-step{flex:1;text-align:center;position:relative;z-index:1;}
+.tl-dot{
+  width:56px;height:56px;border-radius:50%;border:3px solid var(--accent);
+  background:var(--light);display:flex;align-items:center;justify-content:center;
+  margin:0 auto 10px;font-size:22px;}
+.tl-step.done .tl-dot{background:var(--accent);}
+.tl-date{font-size:12px;font-weight:700;color:var(--accent);margin-bottom:4px;}
+.tl-label{font-size:12px;color:var(--text);line-height:1.5;}
+
+/* ===== MISC ===== */
+.note{
+  background:var(--pale);border-left:4px solid var(--accent);
+  padding:13px 17px;font-size:12.5px;color:var(--sub);
+  border-radius:0 10px 10px 0;margin:14px 0;line-height:1.75;}
+.hl-box{
+  background:var(--accent);color:#fff;border-radius:16px;
+  padding:22px 28px;text-align:center;font-size:17px;font-weight:800;margin:24px 0;}
+.hl-box span{font-size:13px;font-weight:400;opacity:.85;display:block;margin-top:4px;}
+.badge{
+  display:inline-block;background:var(--light);color:var(--accent2);
+  font-size:11px;font-weight:700;padding:3px 10px;
+  border-radius:20px;margin-bottom:8px;letter-spacing:.06em;}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start;}
+.feature-row{
+  display:flex;gap:14px;padding:14px 0;border-bottom:1px solid var(--border);
+  align-items:flex-start;}
+.feature-row:last-child{border-bottom:none;}
+.f-num{
+  width:34px;height:34px;border-radius:50%;background:var(--accent);color:#fff;
+  font-size:14px;font-weight:800;display:flex;align-items:center;
+  justify-content:center;flex-shrink:0;}
+.f-title{font-size:14px;font-weight:700;color:var(--text);margin-bottom:3px;}
+.f-sub{font-size:12.5px;color:var(--sub);line-height:1.6;}
+.img-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:20px 0;}
+.ig-item{border-radius:14px;overflow:hidden;position:relative;aspect-ratio:16/9;background:var(--light);}
+.ig-item img{width:100%;height:100%;object-fit:cover;display:block;}
+.ig-caption{
+  position:absolute;bottom:0;left:0;right:0;
+  background:linear-gradient(to top,rgba(0,0,0,.55),transparent);
+  color:#fff;font-size:12px;font-weight:600;padding:20px 12px 8px;}
+.cta-box{
+  background:linear-gradient(135deg,var(--pale),var(--white));
+  border:2px solid var(--accent);border-radius:22px;padding:40px;text-align:center;
+  margin-top:28px;}
+.cta-title{font-size:20px;font-weight:800;color:var(--text);margin-bottom:12px;}
+.cta-sub{font-size:13px;color:var(--sub);line-height:1.8;}
+footer{
+  margin-top:60px;padding-top:20px;border-top:1px solid var(--border);
+  text-align:center;font-size:11px;color:#B09AAE;line-height:1.8;}
+
+/* ===== COMPARE TABLE (bakuchiol) ===== */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:20px 0;}
+.cmp-col{background:var(--white);border-radius:14px;border:1px solid var(--border);overflow:hidden;}
+.cmp-head{padding:16px;text-align:center;font-weight:800;font-size:14px;}
+.cmp-head.a{background:var(--accent);color:#fff;}
+.cmp-head.b{background:#EEE;color:#555;}
+.cmp-row{padding:11px 16px;border-top:1px solid var(--border);font-size:13px;color:var(--sub);}
+.cmp-row strong{color:var(--text);}
+
+@media(max-width:680px){
+  .stats-row,.cards-3,.cards-2,.plans{grid-template-columns:1fr;}
+  .aidma{flex-wrap:wrap;}.flow5{flex-wrap:wrap;}
+  .dist{flex-direction:column;}.two-col{grid-template-columns:1fr;}
+  .img-grid{grid-template-columns:1fr;}.hero h1{font-size:26px;}
+  .tl{flex-wrap:wrap;gap:12px;}.tl::before{display:none;}
+  .llmo-flow{flex-direction:column;}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<!-- ===== HERO ===== -->
+<div class="hero">
+  <div class="hero-eyebrow">ESTHE NEWS WEB — REVIEW ARTICLE TIE-UP PROPOSAL</div>
+  <h1>Lithap化粧品 ×<br>エス通WEB 記事タイアップ</h1>
+  <div class="hero-product">「ミトコンドリア美容の第一想起を、第三者記事で獲る」</div>
+  <div class="hero-meta">EKrie株式会社 御中　|　2026年11月6日　|　株式会社新東通信 エステティック通信チーム</div>
+  <div class="hero-logo">
+    produced by
+    <img src="assets/logo-esutsu.png" alt="Esthetic wired" onerror="this.style.display='none'">
+    <span style="font-size:14px;font-weight:700;color:rgba(255,255,255,.85);">Esthetic <em>wired</em></span>
+  </div>
+</div>
+
+<!-- ===== SECTION 0: エグゼクティブサマリー ===== -->
+<section>
+  <div class="stats-row">
+    <div class="stat-card">
+      <div class="stat-n">93<span class="stat-unit">%</span></div>
+      <div class="stat-label">エス通WEBの<br>広告信頼度</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-n">36<span class="stat-unit">%</span></div>
+      <div class="stat-label">記事掲載後の<br>導入契約率</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-n">90<span class="stat-unit">%</span></div>
+      <div class="stat-label">読者のうち<br>サロン決裁権者</div>
+    </div>
+  </div>
+  <div class="note">※広告信頼度・導入契約率はエステティック通信読者調査・自社掲載実績に基づく参考値。成果を保証するものではありません。</div>
+</section>
+
+<!-- ===== SECTION 1: 課題提起 ===== -->
+<section>
+  <div class="sec-head">
+    <div class="sec-num">01</div>
+    <h2>導入決定に必要な情報が、ウェブに足りていない</h2>
+  </div>
+
+  <p style="color:var(--sub);margin-bottom:20px;">
+    サロン経営者が商品導入を検討するとき、AIDMA（注意→関心→欲求→記憶→行動）の
+    「関心・欲求・記憶」フェーズを支える情報がウェブ上にほとんど存在しません。
+    Lithapの高品質な商品でさえ、第三者目線で「実際のサロンでの声」を確認できる場所はわずかです。
+  </p>
+
+  <div class="aidma">
+    <div class="aidma-box">
+      <div class="aidma-letter">A</div>
+      <div class="aidma-name">注意</div>
+      <div class="aidma-desc">展示会・誌面・SNSで商品を知る</div>
+      <div class="aidma-tag">届いている</div>
+    </div>
+    <div class="aidma-arrow">▶</div>
+    <div class="aidma-box hot">
+      <div class="aidma-letter">I</div>
+      <div class="aidma-name">関心</div>
+      <div class="aidma-desc">どんな商品か、実際どうかを調べる</div>
+      <div class="aidma-tag">情報が不足</div>
+    </div>
+    <div class="aidma-arrow">▶</div>
+    <div class="aidma-box hot">
+      <div class="aidma-letter">D</div>
+      <div class="aidma-name">欲求</div>
+      <div class="aidma-desc">使いたいと思える導入事例を探す</div>
+      <div class="aidma-tag">情報が不足</div>
+    </div>
+    <div class="aidma-arrow">▶</div>
+    <div class="aidma-box hot">
+      <div class="aidma-letter">M</div>
+      <div class="aidma-name">記憶</div>
+      <div class="aidma-desc">印象に残り、比べるときに思い出す</div>
+      <div class="aidma-tag">情報が不足</div>
+    </div>
+    <div class="aidma-arrow">▶</div>
+    <div class="aidma-box">
+      <div class="aidma-letter">A</div>
+      <div class="aidma-name">行動</div>
+      <div class="aidma-desc">問い合わせ・導入</div>
+      <div class="aidma-tag">判断材料なく足踏み</div>
+    </div>
+  </div>
+
+  <div class="hl-box">
+    関心・欲求・記憶を支える「第三者の声」が、ウェブ上に足りていません
+    <span>サロン専売品の導入レビューは、第三者が比較・評価できる場がほぼ皆無（当社調査 2026年9月）</span>
+  </div>
+</section>
+
+<!-- ===== SECTION 2: BtoBでは他社の声が決め手 ===== -->
+<section>
+  <div class="sec-head">
+    <div class="sec-num">02</div>
+    <h2>BtoBの導入では、他のサロンの声が決め手になります</h2>
+  </div>
+  <div class="cards-3">
+    <div class="card">
+      <div class="card-num" style="font-size:28px;">💰</div>
+      <div class="card-title">高額で、失敗できない</div>
+      <div class="card-sub">化粧品導入は継続コストも含め大きな判断。導入前に実績を慎重に比べます。</div>
+    </div>
+    <div class="card">
+      <div class="card-num" style="font-size:28px;">👩‍💼</div>
+      <div class="card-title">経営者自らが決める</div>
+      <div class="card-sub">エス通WEB読者の90%は決裁権者。導入後の売上を具体的に描けるかで判断します。</div>
+    </div>
+    <div class="card">
+      <div class="card-num" style="font-size:28px;">💬</div>
+      <div class="card-title">売り手の説明では足りない</div>
+      <div class="card-sub">メーカーの自社説明より、第三者記事や実際のサロンの声のほうが圧倒的に信頼されます。</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 3: 商材フォーカス ===== -->
+<section>
+  <div class="sec-head">
+    <div class="sec-num">03</div>
+    <h2>Lithap化粧品フォーカス——記事化する価値と根拠</h2>
+  </div>
+
+  <div class="img-grid">
+    <div class="ig-item">
+      <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=600&q=80&fit=crop" alt="Lithap化粧品イメージ" loading="lazy" onerror="this.parentElement.style.background='#FFE8F0'">
+      <div class="ig-caption">ミトコンドリア×自律神経 — 14年の研究が生んだサロン専売品</div>
+    </div>
+    <div class="ig-item">
+      <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&q=80&fit=crop" alt="スキンケアイメージ" loading="lazy" onerror="this.parentElement.style.background='#FFE8F0'">
+      <div class="ig-caption">細胞の自己甦生力にアプローチする次世代フォーミュラ</div>
+    </div>
+  </div>
+
+  <div class="two-col" style="margin-top:20px;">
+    <div>
+      <div class="badge">BRAND STRENGTH</div>
+      <div class="feature-row">
+        <div class="f-num">1</div>
+        <div>
+          <div class="f-title">14年の研究開発・店販率95%</div>
+          <div class="f-sub">直営店で18年以上・店販率95%以上を記録。「売らない販売法」で顧客が自然と購入する設計。</div>
+        </div>
+      </div>
+      <div class="feature-row">
+        <div class="f-num">2</div>
+        <div>
+          <div class="f-title">ミトコンドリア×自律神経理論</div>
+          <div class="f-sub">老化の根本原因「ミトコンドリア機能低下×自律神経の乱れ」に複合アプローチ。科学的根拠が明確。</div>
+        </div>
+      </div>
+      <div class="feature-row">
+        <div class="f-num">3</div>
+        <div>
+          <div class="f-title">年齢・肌タイプ不問の全9品</div>
+          <div class="f-sub">区分がないため在庫リスク低。サラコ・キラコ・プルコ等、スキンケア全工程をカバー。</div>
+        </div>
+      </div>
+      <div class="feature-row">
+        <div class="f-num">4</div>
+        <div>
+          <div class="f-title">リピート率90%以上</div>
+          <div class="f-sub">継続して使い続けたくなる価格設計（成分以外のコストカット）で顧客固定化を実現。</div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="badge">INFORMATION GAP（記事化の好機）</div>
+      <div class="note" style="margin-top:0;">
+        <strong>現状のウェブ記事空白領域：</strong><br>
+        「店販率95%」の実績を具体的なサロン経営者目線で語る記事が存在しない。<br><br>
+        「ミトコンドリア美容」「自律神経×肌」をサロン導入視点で解説した専門記事がない。<br><br>
+        「在庫負担を抑えながら物販強化」という経営課題と直結した記事が不足している。
+      </div>
+      <div style="background:var(--white);border-radius:14px;padding:18px;border:1px solid var(--border);margin-top:16px;">
+        <div class="f-title" style="margin-bottom:10px;">📦 商品ラインナップ（全9品）</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;font-size:12px;color:var(--sub);">
+          <span>🌿 サラコ（クレンジング）</span>
+          <span>✨ キラコ（ローション）</span>
+          <span>🌸 プレキラコ（鎮静）</span>
+          <span>💧 プルコ（クリーム）</span>
+          <span>☀️ マモルー（UVケア）</span>
+          <span>⚡ ホワイタリー（美容液）</span>
+          <span>🔬 ミトコ（サプリ）</span>
+          <span>✨ カーヴィー（炭酸）</span>
+          <span colspan="2">📱 ラッシュセラム（まつ毛美容）</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 4: 記事案 ===== -->
+<section>
+  <div class="sec-head">
+    <div class="sec-num">04</div>
+    <h2>推奨記事案 3本——テーマと根拠</h2>
+  </div>
+
+  <!-- 記事①（メイン） -->
+  <div class="art-card">
+    <div class="art-type">★ メイン記事 ｜ 導入レビュー型</div>
+    <div class="art-title">「店販率95%の理由を聞いた——Lithap化粧品を導入したサロンオーナーが語る、顧客が"黙って買い続ける"化粧品の条件」</div>
+    <img src="https://images.unsplash.com/photo-1512207736890-6ffed8a84e8d?w=800&q=80&fit=crop" alt="化粧品導入イメージ" class="art-img" loading="lazy" onerror="this.style.display='none'">
+    <div class="art-reason">
+      <strong>なぜこのテーマか：</strong>
+      「店販率95%」という実績は業界屈指の数値ですが、それを裏付ける具体的なサロン経営者の声がウェブ上にほぼ存在しません。
+      第三者メディアであるエス通WEBが「なぜ売れるのか」「導入前との違いは何か」を取材記事として公開することで、
+      情報収集中の経営者の「欲求」「記憶」フェーズに深く刺さります。
+      物販強化を検討しているサロン経営者が最も知りたい「結果の根拠」を、信頼性ある媒体で届けられます。
+    </div>
+    <div class="kw-row">
+      <span class="kw-tag">サロン専売化粧品 おすすめ</span>
+      <span class="kw-tag">店販 化粧品 サロン 選び方</span>
+      <span class="kw-tag">サロン 物販 リピート率</span>
+      <span class="kw-tag">Lithap リトハピ 口コミ</span>
+    </div>
+  </div>
+
+  <!-- 記事② -->
+  <div class="art-card sub">
+    <div class="art-type">誘導記事① ｜ 検索キーワード型</div>
+    <div class="art-title">「"肌の自己再生力"から化粧品を選ぶ——ミトコンドリア理論が導く、次世代サロン専売品の基準」</div>
+    <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&q=80&fit=crop" alt="スキンケア成分イメージ" class="art-img" loading="lazy" onerror="this.style.display='none'">
+    <div class="art-reason">
+      <strong>なぜこのテーマか：</strong>
+      「ミトコンドリア 美容」「自律神経 肌改善」は一般消費者向け記事が多く、
+      サロン経営者向けに「なぜ導入すべきか」「どう売るか」まで解説した専門記事が存在しません。
+      エス通WEBが先行的にこのニッチを取ることで、AIやGoogle検索で引用されやすい記事が生まれます。
+      Lithapの科学的背景を深掘りするコンテンツは、競合商品との差別化を明確にします。
+    </div>
+    <div class="kw-row">
+      <span class="kw-tag">ミトコンドリア 美容 サロン</span>
+      <span class="kw-tag">自律神経 肌 化粧品</span>
+      <span class="kw-tag">細胞再生 スキンケア プロ向け</span>
+    </div>
+  </div>
+
+  <!-- 記事③ -->
+  <div class="art-card sub">
+    <div class="art-type">誘導記事② ｜ 検索キーワード型</div>
+    <div class="art-title">「在庫を抱えずに店販率を上げる——サロン専売化粧品の"賢い選び方"5つの基準」</div>
+    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&q=80&fit=crop" alt="サロン内装イメージ" class="art-img" loading="lazy" onerror="this.style.display='none'">
+    <div class="art-reason">
+      <strong>なぜこのテーマか：</strong>
+      在庫リスクと物販強化は多くのサロン経営者が抱える矛盾した悩みです。
+      Lithapは「年齢・肌タイプ不問の汎用設計」「小ロット発注可能」という特性で、
+      この課題に直接答えられます。商材名を前面に出さず、
+      経営課題起点で検索してきた読者を自然にLithapへ誘導するテーマ設計です。
+    </div>
+    <div class="kw-row">
+      <span class="kw-tag">サロン専売品 選び方 在庫</span>
+      <span class="kw-tag">店販率 上げる 化粧品</span>
+      <span class="kw-tag">サロン 物販強化 方法</span>
+    </div>
+  </div>
+
+  <!-- KW需要テーブル -->
+  <div style="margin-top:28px;">
+    <div class="badge">検索需要分析（推定）</div>
+    <table>
+      <tr>
+        <th>検索キーワード</th>
+        <th>推定検索量（月間）</th>
+        <th>専門記事の有無</th>
+        <th>優先度</th>
+      </tr>
+      <tr>
+        <td>サロン専売化粧品 おすすめ 店販</td>
+        <td>30〜50件/月</td>
+        <td>△（一般向け中心）</td>
+        <td class="pri-h">★★★</td>
+      </tr>
+      <tr>
+        <td>ミトコンドリア 美容 サロン導入</td>
+        <td>15〜30件/月</td>
+        <td>✗（ほぼなし）</td>
+        <td class="pri-h">★★★</td>
+      </tr>
+      <tr>
+        <td>店販率 上げる 化粧品 サロン</td>
+        <td>20〜35件/月</td>
+        <td>◯（経営一般）</td>
+        <td class="pri-m">★★</td>
+      </tr>
+      <tr>
+        <td>Lithap リトハピ 口コミ 効果</td>
+        <td>10〜20件/月</td>
+        <td>◯（@cosme等）</td>
+        <td class="pri-m">★★</td>
+      </tr>
+      <tr>
+        <td>自律神経 肌 化粧品 サロン</td>
+        <td>10〜20件/月</td>
+        <td>✗</td>
+        <td class="pri-m">★★</td>
+      </tr>
+      <tr>
+        <td>サロン専売 在庫 負担 解決</td>
+        <td>5〜15件/月</td>
+        <td>✗</td>
+        <td>★</td>
+      </tr>
+    </table>
+    <div class="note">※推定値は上位表示コンテンツの量・競合状況から算出した定性的な推定レンジです。正式な検索ボリュームはGoogleキーワードプランナー等での計測を推奨します。</div>
+  </div>
+</section>
+
+<!-- ===== SECTION 5: 記事構成 ===== -->
+<section>
+  <div class="sec-head">
+    <div class="sec-num">05</div>
+    <h2>記事は5つの構成。AI検索対策（LLMO）にもなります</h2>
+  </div>
+
+  <div class="flow5">
+    <div class="f5step">
+      <div class="f5circle">1</div>
+      <div class="f5title">導入の決め手</div>
+      <div class="f5sub">なぜLithapを選んだか。比べた商品は何か</div>
+    </div>
+    <div class="f5arrow">▶</div>
+    <div class="f5step">
+      <div class="f5circle">2</div>
+      <div class="f5title">使い方・使用感</div>
+      <div class="f5sub">実際の施術や店販での使い心地</div>
+    </div>
+    <div class="f5arrow">▶</div>
+    <div class="f5step">
+      <div class="f5circle">3</div>
+      <div class="f5title">お客様の反応</div>
+      <div class="f5sub">施術後の声、リピート・満足度</div>
+    </div>
+    <div class="f5arrow">▶</div>
+    <div class="f5step">
+      <div class="f5circle">4</div>
+      <div class="f5title">経営の変化</div>
+      <div class="f5sub">店販率・客単価・売上への影響</div>
+    </div>
+    <div class="f5arrow">▶</div>
+    <div class="f5step">
+      <div class="f5circle">5</div>
+      <div class="f5title">メーカーQ&A</div>
+      <div class="f5sub">導入前の疑問にメーカーが直接回答</div>
+    </div>
+  </div>
+
+  <div class="llmo-box">
+    <div class="llmo-title">🤖 LLMO（AI検索対策）とは</div>
+    <p style="font-size:13px;color:var(--sub);margin-bottom:16px;">
+      ChatGPT・Perplexity等のAIが回答する際、エス通WEBのQ&A構造記事が根拠として引用されやすくなります。
+      記事公開後も、AIへの露出資産として長期的に機能します。
+    </p>
+    <div class="llmo-flow">
+      <div class="llmo-step">
+        <strong>🙋 サロン経営者がAIに質問</strong>
+        「Lithapってどんな化粧品？」「店販率を上げる化粧品は？」
+      </div>
+      <div class="llmo-arr">▶</div>
+      <div class="llmo-step">
+        <strong>🔍 AIがウェブから検索</strong>
+        Q&A構造・具体的なサロン事例・成分解説が充実した記事を探す
+      </div>
+      <div class="llmo-arr">▶</div>
+      <div class="llmo-step final">
+        <strong>📰 エス通WEB記事が引用される</strong>
+        2004年創刊の専門媒体の信頼性＋Q&A構造で引用されやすい記事に
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 6: 拡散プラン ===== -->
+<section>
+  <div class="sec-head">
+    <div class="sec-num">06</div>
+    <h2>記事は公開して終わりではなく、サロン経営者に届け続けます</h2>
+  </div>
+
+  <div class="dist">
+    <div class="dist-step hl">
+      <div class="d-icon">📰</div>
+      <div class="d-name">エス通WEB</div>
+      <div class="d-sub">記事を掲載<br>検索・AI引用資産に</div>
+    </div>
+    <div class="dist-arr">▶</div>
+    <div class="dist-step">
+      <div class="d-icon">📸</div>
+      <div class="d-name">Instagram</div>
+      <div class="d-sub">フォロワーへ配信<br>エンゲージメント促進</div>
+    </div>
+    <div class="dist-arr">▶</div>
+    <div class="dist-step">
+      <div class="d-icon">💬</div>
+      <div class="d-name">LINE公式</div>
+      <div class="d-sub">読者会員へ直接配信<br>高開封率</div>
+    </div>
+    <div class="dist-arr">▶</div>
+    <div class="dist-step">
+      <div class="d-icon">📊</div>
+      <div class="d-name">Meta広告</div>
+      <div class="d-sub">約25,000サロンの<br>データから精密配信</div>
+    </div>
+  </div>
+
+  <div class="cards-3" style="margin-top:16px;">
+    <div class="card" style="text-align:center;">
+      <div class="card-num">¥52</div>
+      <div class="card-title">CPC（クリック単価）</div>
+      <div class="card-sub">Meta広告 2024〜2026年実績平均</div>
+    </div>
+    <div class="card" style="text-align:center;">
+      <div class="card-num">1.78<span style="font-size:18px;">%</span></div>
+      <div class="card-title">CTR（リンククリック率）</div>
+      <div class="card-sub">エス通WEB記事連動広告実績</div>
+    </div>
+    <div class="card" style="text-align:center;">
+      <div class="card-num">64<span style="font-size:18px;">件</span></div>
+      <div class="card-title">累計配信キャンペーン</div>
+      <div class="card-sub">エステ業界実績累計</div>
+    </div>
+  </div>
+  <div class="note">※数値は2024〜2026年に当社が管理したMeta広告の実績平均値（参考値）。成果を保証するものではありません。</div>
+</section>
+
+<!-- ===== SECTION 7: 料金プラン ===== -->
+<section>
+  <div class="sec-head">
+    <div class="sec-num">07</div>
+    <h2>3つのプランと、今だけの特典</h2>
+  </div>
+  <div class="plans">
+    <div class="plan">
+      <div class="plan-name">ENTRY</div>
+      <div class="plan-desc">まず1記事から<br>（導入レビュー型 or 検索KW型）</div>
+      <div class="plan-orig">通常 ¥250,000</div>
+      <div class="plan-price">¥150,000</div>
+      <div class="plan-tax">（税別）特別価格</div>
+      <div class="plan-gift">📝 1記事掲載<br>+ SNS配信 + 検索公開</div>
+    </div>
+    <div class="plan rec">
+      <div class="rec-badge">★ おすすめ</div>
+      <div class="plan-name">STANDARD</div>
+      <div class="plan-desc">メイン記事＋誘導記事2本<br>（導入レビュー型 + 検索KW型）</div>
+      <div class="plan-price">¥300,000</div>
+      <div class="plan-tax">（税別）</div>
+      <div class="plan-gift">🎁 純広告1P or Meta広告<br>50,000円分プレゼント</div>
+    </div>
+    <div class="plan">
+      <div class="plan-name">PREMIUM</div>
+      <div class="plan-desc">年間契約12本以上<br>カテゴリ制覇戦略</div>
+      <div class="plan-price">¥1,200,000<span style="font-size:18px;">〜</span></div>
+      <div class="plan-tax">（税別）</div>
+      <div class="plan-gift">🎁 純広告2P分＋Meta広告<br>100,000円分プレゼント</div>
+    </div>
+  </div>
+  <div class="note">すべて撮影なしのプランです。撮影ありはオプションで別途50,000円〜（税別）。プレミアムの特典は通常600,000円→特別価格でのご提供。金額はすべて税別。</div>
+</section>
+
+<!-- ===== SECTION 8: スケジュール ===== -->
+<section>
+  <div class="sec-head">
+    <div class="sec-num">08</div>
+    <h2>お申込みは12月11日（金）まで。1月中に基本公開します</h2>
+  </div>
+
+  <div class="tl">
+    <div class="tl-step done">
+      <div class="tl-dot">📝</div>
+      <div class="tl-date">12/11（金）</div>
+      <div class="tl-label">お申込み〆切</div>
+    </div>
+    <div class="tl-step">
+      <div class="tl-dot">🎙️</div>
+      <div class="tl-date">12月中</div>
+      <div class="tl-label">ヒアリング・<br>原稿制作</div>
+    </div>
+    <div class="tl-step">
+      <div class="tl-dot">📄</div>
+      <div class="tl-date">12月末</div>
+      <div class="tl-label">ご請求</div>
+    </div>
+    <div class="tl-step done">
+      <div class="tl-dot">🌐</div>
+      <div class="tl-date">1月中</div>
+      <div class="tl-label">基本公開</div>
+    </div>
+    <div class="tl-step">
+      <div class="tl-dot">💴</div>
+      <div class="tl-date">1月末</div>
+      <div class="tl-label">ご入金〆切</div>
+    </div>
+  </div>
+
+  <div class="cards-3" style="margin-top:20px;">
+    <div class="card" style="text-align:center;">
+      <div style="font-size:28px;margin-bottom:8px;">💬</div>
+      <div class="card-title">ヒアリング<br>（無料KW診断つき）</div>
+    </div>
+    <div class="card" style="text-align:center;">
+      <div style="font-size:28px;margin-bottom:8px;">📋</div>
+      <div class="card-title">記事テーマを<br>3案ほどご提示</div>
+    </div>
+    <div class="card" style="text-align:center;">
+      <div style="font-size:28px;margin-bottom:8px;">📣</div>
+      <div class="card-title">公開・拡散<br>（SNS・LINE・Meta）</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<div class="cta-box">
+  <div class="cta-title">まずは無料ヒアリングからご相談ください</div>
+  <div class="cta-sub">
+    記事テーマ・キーワード設計は無料でご提案します。<br>
+    ご不明な点・カスタマイズのご要望もお気軽にご相談ください。
+  </div>
+  <div style="margin-top:20px;font-size:13px;color:var(--sub);">
+    担当：株式会社新東通信 エステティック通信チーム<br>
+    Email: masaki.naruse@shinto-tsushin.co.jp
+  </div>
+</div>
+
+<footer>
+  本資料に含まれる数値・推定値は参考情報であり、成果・効果を保証するものではありません。<br>
+  本資料の内容は商談目的のみにご使用ください。無断転用・転載はご遠慮願います。<br>
+  &copy; 2026 株式会社新東通信 エステティック通信チーム　produced by Esthetic wired
+</footer>
+
+</div>
+</body>
+</html>
