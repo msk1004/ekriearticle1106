@@ -3,13 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>記事タイアップご提案書｜Lithap化粧品 × エス通WEB</title>
+<title>記事タイアップご提案書｜バクチ甦生プログラム × エス通WEB</title>
 <style>
 :root{
-  --bg:#FFF5F7;--white:#fff;--accent:#D64E82;--accent2:#B02E60;
-  --light:#FFE8F0;--pale:#FFF0F5;--text:#2D1A25;--sub:#7A4D5F;
-  --border:#F0C8D8;--shadow:0 6px 24px rgba(214,78,130,.10);
-  --grad:linear-gradient(135deg,#E8306A 0%,#F07AAB 50%,#FABDD3 100%);
+  --bg:#FFF5F7;--white:#fff;--accent:#C8396A;--accent2:#9E2250;
+  --light:#FFD6E6;--pale:#FFF0F5;--text:#2D1A25;--sub:#7A4D5F;
+  --border:#F0C8D8;--shadow:0 6px 24px rgba(200,57,106,.10);
+  --grad:linear-gradient(135deg,#B02555 0%,#D94B7B 40%,#F090B0 80%,#FABDCF 100%);
+  --grad2:linear-gradient(135deg,#E8306A 0%,#F07AAB 100%);
 }
 *{box-sizing:border-box;margin:0;padding:0;}
 body{font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic","Meiryo",sans-serif;
@@ -23,14 +24,14 @@ body{font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic","Meiryo
   position:relative;overflow:hidden;border-radius:0 0 32px 32px;margin-bottom:52px;
 }
 .hero::before,.hero::after{
-  content:'';position:absolute;border-radius:50%;background:rgba(255,255,255,.08);}
-.hero::before{width:360px;height:360px;top:-100px;right:-80px;}
-.hero::after{width:260px;height:260px;bottom:-80px;left:-60px;}
+  content:'';position:absolute;border-radius:50%;background:rgba(255,255,255,.07);}
+.hero::before{width:400px;height:400px;top:-120px;right:-100px;}
+.hero::after{width:280px;height:280px;bottom:-100px;left:-80px;}
 .hero-eyebrow{
   color:rgba(255,255,255,.8);font-size:11px;letter-spacing:.25em;font-weight:600;
   margin-bottom:14px;position:relative;z-index:1;}
 .hero h1{
-  font-size:36px;font-weight:800;color:#fff;line-height:1.35;
+  font-size:34px;font-weight:800;color:#fff;line-height:1.35;
   margin-bottom:10px;position:relative;z-index:1;}
 .hero-product{
   font-size:17px;color:rgba(255,255,255,.9);font-weight:600;
@@ -44,8 +45,7 @@ body{font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic","Meiryo
 .hero-logo img{height:22px;object-fit:contain;opacity:.85;vertical-align:middle;}
 
 /* ===== SECTION HEADERS ===== */
-.sec-head{
-  display:flex;align-items:center;gap:12px;margin-bottom:28px;}
+.sec-head{display:flex;align-items:center;gap:12px;margin-bottom:28px;}
 .sec-num{
   background:var(--accent);color:#fff;font-size:11px;font-weight:700;
   padding:3px 10px;border-radius:20px;white-space:nowrap;letter-spacing:.06em;}
@@ -55,8 +55,7 @@ body{font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic","Meiryo
 section{margin-bottom:60px;}
 
 /* ===== STATS STRIP ===== */
-.stats-row{
-  display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:48px;}
+.stats-row{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:48px;}
 .stat-card{
   background:var(--white);border-radius:18px;padding:30px 20px;text-align:center;
   border:1px solid var(--border);box-shadow:var(--shadow);}
@@ -70,8 +69,7 @@ section{margin-bottom:60px;}
 .card{
   background:var(--white);border-radius:16px;padding:24px 20px;
   border:1px solid var(--border);box-shadow:var(--shadow);}
-.card-num{
-  font-size:38px;font-weight:800;color:var(--accent);line-height:1;margin-bottom:4px;}
+.card-num{font-size:38px;font-weight:800;color:var(--accent);line-height:1;margin-bottom:4px;}
 .card-title{font-size:14px;font-weight:700;color:var(--text);margin-bottom:6px;}
 .card-sub{font-size:12.5px;color:var(--sub);line-height:1.6;}
 
@@ -105,6 +103,24 @@ tr:nth-child(even) td{background:#FAFAFA;}
 .pri-h{color:var(--accent);font-weight:700;}
 .pri-m{color:#C07000;font-weight:600;}
 
+/* ===== COMPARE ===== */
+.compare-wrap{margin:24px 0;}
+.compare-title{font-size:15px;font-weight:800;color:var(--text);margin-bottom:14px;text-align:center;}
+.compare{display:grid;grid-template-columns:1fr 60px 1fr;gap:0;border-radius:18px;overflow:hidden;border:1px solid var(--border);box-shadow:var(--shadow);}
+.cmp-col{background:var(--white);}
+.cmp-mid{background:var(--pale);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px;color:var(--accent2);}
+.cmp-head{padding:18px;text-align:center;font-weight:800;font-size:14px;}
+.cmp-head.bakuchiol{background:var(--grad2);color:#fff;}
+.cmp-head.retinol{background:#EEE;color:#555;}
+.cmp-row{padding:11px 16px;border-top:1px solid var(--border);font-size:12.5px;}
+.cmp-row strong{display:block;font-size:12px;color:var(--accent2);margin-bottom:2px;}
+.cmp-row.good{background:rgba(255,240,247,.5);}
+.cmp-row.bad{background:#F9F9F9;color:#888;}
+.cmp-mid-row{padding:11px 8px;border-top:1px solid var(--border);text-align:center;font-size:11px;color:var(--sub);font-weight:600;}
+.vs-badge{
+  font-size:14px;font-weight:800;color:var(--accent);
+  display:flex;align-items:center;justify-content:center;height:100%;}
+
 /* ===== ARTICLE CARDS ===== */
 .art-card{
   background:var(--white);border-radius:18px;padding:28px 28px 24px;
@@ -114,12 +130,8 @@ tr:nth-child(even) td{background:#FAFAFA;}
   content:'';position:absolute;left:0;top:0;bottom:0;
   width:5px;background:var(--accent);}
 .art-card.sub::before{background:var(--light);border-right:2px solid var(--accent);}
-.art-type{
-  font-size:11px;font-weight:700;letter-spacing:.15em;
-  color:var(--accent);margin-bottom:10px;}
-.art-title{
-  font-size:17px;font-weight:800;line-height:1.5;
-  color:var(--text);margin-bottom:14px;}
+.art-type{font-size:11px;font-weight:700;letter-spacing:.15em;color:var(--accent);margin-bottom:10px;}
+.art-title{font-size:17px;font-weight:800;line-height:1.5;color:var(--text);margin-bottom:14px;}
 .art-reason{
   background:var(--pale);border-radius:12px;padding:14px 16px;
   font-size:13px;color:var(--sub);line-height:1.75;margin-bottom:14px;}
@@ -143,7 +155,7 @@ tr:nth-child(even) td{background:#FAFAFA;}
 .f5sub{font-size:11.5px;color:var(--sub);line-height:1.5;}
 .f5arrow{font-size:22px;color:var(--accent);flex-shrink:0;padding-top:18px;}
 
-/* ===== LLMO BOX ===== */
+/* ===== LLMO ===== */
 .llmo-box{
   background:linear-gradient(135deg,var(--pale),var(--white));
   border:2px solid var(--accent);border-radius:18px;
@@ -241,26 +253,51 @@ tr:nth-child(even) td{background:#FAFAFA;}
   margin-top:28px;}
 .cta-title{font-size:20px;font-weight:800;color:var(--text);margin-bottom:12px;}
 .cta-sub{font-size:13px;color:var(--sub);line-height:1.8;}
+
+/* ===== TREND CHART ===== */
+.trend-chart{margin:20px 0;}
+.tc-row{
+  display:flex;align-items:center;gap:12px;margin-bottom:10px;}
+.tc-label{width:160px;font-size:12.5px;color:var(--sub);flex-shrink:0;text-align:right;}
+.tc-bar-wrap{flex:1;background:#EEE;border-radius:6px;height:24px;overflow:hidden;}
+.tc-bar{height:100%;border-radius:6px;display:flex;align-items:center;padding-left:10px;
+  font-size:11px;font-weight:700;color:#fff;}
+.tc-bar.b{background:var(--grad2);}
+.tc-bar.r{background:#AAA;}
+.tc-val{width:40px;font-size:12px;font-weight:700;color:var(--accent);flex-shrink:0;}
+
+/* ===== OPPORTUNITY CARDS ===== */
+.opp-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:20px 0;}
+.opp-card{
+  border-radius:14px;padding:20px;border:2px solid var(--border);
+  position:relative;overflow:hidden;}
+.opp-card.present{background:var(--white);}
+.opp-card.after{background:var(--grad2);border-color:var(--accent);}
+.opp-label{
+  font-size:11px;font-weight:700;letter-spacing:.12em;
+  margin-bottom:10px;}
+.opp-card.present .opp-label{color:#888;}
+.opp-card.after .opp-label{color:rgba(255,255,255,.8);}
+.opp-title{font-size:16px;font-weight:800;line-height:1.4;margin-bottom:8px;}
+.opp-card.present .opp-title{color:#666;}
+.opp-card.after .opp-title{color:#fff;}
+.opp-desc{font-size:12.5px;color:var(--sub);line-height:1.6;}
+.opp-card.after .opp-desc{color:rgba(255,255,255,.85);}
+
 footer{
   margin-top:60px;padding-top:20px;border-top:1px solid var(--border);
   text-align:center;font-size:11px;color:#B09AAE;line-height:1.8;}
-
-/* ===== COMPARE TABLE (bakuchiol) ===== */
-.compare{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:20px 0;}
-.cmp-col{background:var(--white);border-radius:14px;border:1px solid var(--border);overflow:hidden;}
-.cmp-head{padding:16px;text-align:center;font-weight:800;font-size:14px;}
-.cmp-head.a{background:var(--accent);color:#fff;}
-.cmp-head.b{background:#EEE;color:#555;}
-.cmp-row{padding:11px 16px;border-top:1px solid var(--border);font-size:13px;color:var(--sub);}
-.cmp-row strong{color:var(--text);}
 
 @media(max-width:680px){
   .stats-row,.cards-3,.cards-2,.plans{grid-template-columns:1fr;}
   .aidma{flex-wrap:wrap;}.flow5{flex-wrap:wrap;}
   .dist{flex-direction:column;}.two-col{grid-template-columns:1fr;}
-  .img-grid{grid-template-columns:1fr;}.hero h1{font-size:26px;}
+  .img-grid,.opp-row{grid-template-columns:1fr;}
+  .hero h1{font-size:24px;}
   .tl{flex-wrap:wrap;gap:12px;}.tl::before{display:none;}
   .llmo-flow{flex-direction:column;}
+  .compare{grid-template-columns:1fr;}
+  .cmp-mid{display:none;}
 }
 </style>
 </head>
@@ -270,8 +307,8 @@ footer{
 <!-- ===== HERO ===== -->
 <div class="hero">
   <div class="hero-eyebrow">ESTHE NEWS WEB — REVIEW ARTICLE TIE-UP PROPOSAL</div>
-  <h1>Lithap化粧品 ×<br>エス通WEB 記事タイアップ</h1>
-  <div class="hero-product">「ミトコンドリア美容の第一想起を、第三者記事で獲る」</div>
+  <h1>バクチ甦生プログラム ×<br>エス通WEB 記事タイアップ</h1>
+  <div class="hero-product">「"刺激なき肌再生"の第一想起を、第三者記事で獲る」</div>
   <div class="hero-meta">EKrie株式会社 御中　|　2026年11月6日　|　株式会社新東通信 エステティック通信チーム</div>
   <div class="hero-logo">
     produced by
@@ -280,7 +317,7 @@ footer{
   </div>
 </div>
 
-<!-- ===== SECTION 0: エグゼクティブサマリー ===== -->
+<!-- ===== STATS STRIP ===== -->
 <section>
   <div class="stats-row">
     <div class="stat-card">
@@ -299,45 +336,226 @@ footer{
   <div class="note">※広告信頼度・導入契約率はエステティック通信読者調査・自社掲載実績に基づく参考値。成果を保証するものではありません。</div>
 </section>
 
-<!-- ===== SECTION 1: 課題提起 ===== -->
+<!-- ===== SECTION 1: 市場トレンドとチャンス ===== -->
 <section>
   <div class="sec-head">
     <div class="sec-num">01</div>
-    <h2>導入決定に必要な情報が、ウェブに足りていない</h2>
+    <h2>バクチオールは「今が情報空白の最大チャンス」</h2>
   </div>
 
-  <p style="color:var(--sub);margin-bottom:20px;">
-    サロン経営者が商品導入を検討するとき、AIDMA（注意→関心→欲求→記憶→行動）の
-    「関心・欲求・記憶」フェーズを支える情報がウェブ上にほとんど存在しません。
-    Lithapの高品質な商品でさえ、第三者目線で「実際のサロンでの声」を確認できる場所はわずかです。
+  <p style="color:var(--sub);margin-bottom:24px;">
+    世界的にバクチオール（Bakuchiol）への注目が急上昇しています。
+    レチノールの代替成分として科学的に証明された効果が話題となる中、
+    エステサロン経営者向けの専門情報はほぼ存在しません。
+    今すぐ記事を公開することで、カテゴリの第一想起を獲得できます。
   </p>
+
+  <!-- トレンドグラフ（CSS Bar Chart） -->
+  <div class="trend-chart">
+    <div class="badge">「バクチオール」検索トレンド（相対値・概念図）</div>
+    <div style="background:var(--white);border-radius:16px;padding:24px;border:1px solid var(--border);margin-top:8px;">
+      <div class="tc-row">
+        <div class="tc-label">2022年</div>
+        <div class="tc-bar-wrap"><div class="tc-bar b" style="width:28%;">▶</div></div>
+        <div class="tc-val">28%</div>
+      </div>
+      <div class="tc-row">
+        <div class="tc-label">2023年</div>
+        <div class="tc-bar-wrap"><div class="tc-bar b" style="width:44%;">▶</div></div>
+        <div class="tc-val">44%</div>
+      </div>
+      <div class="tc-row">
+        <div class="tc-label">2024年</div>
+        <div class="tc-bar-wrap"><div class="tc-bar b" style="width:65%;">▶</div></div>
+        <div class="tc-val">65%</div>
+      </div>
+      <div class="tc-row">
+        <div class="tc-label">2025年</div>
+        <div class="tc-bar-wrap"><div class="tc-bar b" style="width:82%;">▶</div></div>
+        <div class="tc-val">82%</div>
+      </div>
+      <div class="tc-row">
+        <div class="tc-label">2026年（推定）</div>
+        <div class="tc-bar-wrap"><div class="tc-bar b" style="width:100%;">🔥 急増中</div></div>
+        <div class="tc-val">100%</div>
+      </div>
+      <div style="font-size:11px;color:var(--sub);margin-top:12px;">
+        ※概念図。Google Trendsのグローバルデータをもとに作成した相対的イメージです。正式なデータはGoogle Trends等で確認してください。
+      </div>
+    </div>
+  </div>
+
+  <div class="opp-row">
+    <div class="opp-card present">
+      <div class="opp-label">BEFORE — 現在の情報状況</div>
+      <div class="opp-title">「バクチオール導入レビュー」の専門記事がない</div>
+      <div class="opp-desc">
+        消費者向けの比較記事は増加中。しかし「エステサロンとして導入する視点」「経営への影響」「施術設計」を語った専門記事はほぼ皆無。
+      </div>
+    </div>
+    <div class="opp-card after">
+      <div class="opp-label">AFTER — エス通WEB記事掲載後</div>
+      <div class="opp-title">カテゴリの第一想起を<br>EKrieが獲得</div>
+      <div class="opp-desc">
+        2004年創刊の専門媒体が「バクチ甦生プログラム」を記事化することで、AIと検索に長期的に引用され続ける資産に。
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 2: バクチオール vs レチノール ===== -->
+<section>
+  <div class="sec-head">
+    <div class="sec-num">02</div>
+    <h2>バクチオールとは——レチノールを超えた理由</h2>
+  </div>
+
+  <div class="img-grid">
+    <div class="ig-item">
+      <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=600&q=80&fit=crop" alt="バクチオール植物成分" loading="lazy" onerror="this.parentElement.style.background='#FFD6E6'">
+      <div class="ig-caption">バクチオール — インド原産バクチ（Psoralea corylifolia）から抽出</div>
+    </div>
+    <div class="ig-item">
+      <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&q=80&fit=crop" alt="肌再生イメージ" loading="lazy" onerror="this.parentElement.style.background='#FFD6E6'">
+      <div class="ig-caption">ダウンタイムゼロ — 施術直後から美しい肌に</div>
+    </div>
+  </div>
+
+  <div class="compare-wrap">
+    <div class="compare-title">バクチオール vs レチノール — 比較表</div>
+    <div class="compare">
+      <div class="cmp-col">
+        <div class="cmp-head bakuchiol">🌿 バクチオール</div>
+        <div class="cmp-row good"><strong>刺激・ダウンタイム</strong>ほぼなし。敏感肌でも即日から使用可</div>
+        <div class="cmp-row good"><strong>光毒性・紫外線感受性</strong>なし。朝も使用OK</div>
+        <div class="cmp-row good"><strong>妊娠・授乳中</strong>使用可能（要確認）</div>
+        <div class="cmp-row good"><strong>アンチエイジング効果</strong>臨床試験でレチノール同等の効果を確認</div>
+        <div class="cmp-row good"><strong>抗炎症・抗酸化作用</strong>あり（追加メリット）</div>
+        <div class="cmp-row good"><strong>施術設計</strong>初回から全量使用可。リスクが低い</div>
+      </div>
+      <div class="cmp-mid">
+        <div class="vs-badge">VS</div>
+        <div class="cmp-mid-row">刺激</div>
+        <div class="cmp-mid-row">光毒性</div>
+        <div class="cmp-mid-row">妊娠中</div>
+        <div class="cmp-mid-row">効果</div>
+        <div class="cmp-mid-row">追加作用</div>
+        <div class="cmp-mid-row">施術</div>
+      </div>
+      <div class="cmp-col">
+        <div class="cmp-head retinol">レチノール</div>
+        <div class="cmp-row bad"><strong>刺激・ダウンタイム</strong>赤み・皮剥け。慣れるまで数週間</div>
+        <div class="cmp-row bad"><strong>光毒性・紫外線感受性</strong>あり。夜のみ使用が基本</div>
+        <div class="cmp-row bad"><strong>妊娠・授乳中</strong>使用不可（催奇形性リスク）</div>
+        <div class="cmp-row"><strong>アンチエイジング効果</strong>研究実績は豊富。速効性あり</div>
+        <div class="cmp-row bad"><strong>追加作用</strong>炎症を起こしやすい</div>
+        <div class="cmp-row bad"><strong>施術設計</strong>低濃度から始め徐々に慣らす必要</div>
+      </div>
+    </div>
+    <div class="note" style="margin-top:14px;">
+      ※2026年の臨床試験データでは、0.5%バクチオール（1日2回）と0.5%レチノール（1日1回）を12週間比較し、シワ・ハリ・弾力でほぼ同等の改善効果を確認（参考：Dhaliwal et al. British Journal of Dermatology）。
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 3: 商材フォーカス ===== -->
+<section>
+  <div class="sec-head">
+    <div class="sec-num">03</div>
+    <h2>バクチ甦生プログラムフォーカス——記事化する価値と根拠</h2>
+  </div>
+
+  <div class="two-col">
+    <div>
+      <div class="badge">PROGRAM STRENGTH</div>
+      <div class="feature-row">
+        <div class="f-num">1</div>
+        <div>
+          <div class="f-title">刺激なき肌再生（ダウンタイムゼロ）</div>
+          <div class="f-sub">「刺激的だけど刺激がない」設計。ハーブピーリングのようなめくれや赤みがなく、施術直後から美しい肌に。</div>
+        </div>
+      </div>
+      <div class="feature-row">
+        <div class="f-num">2</div>
+        <div>
+          <div class="f-title">1回で結果が見える即効性</div>
+          <div class="f-sub">たるみ改善・ニキビ・肌トーン向上など、施術後すぐに実感できる変化。顧客の「また来たい」を生みやすい。</div>
+        </div>
+      </div>
+      <div class="feature-row">
+        <div class="f-num">3</div>
+        <div>
+          <div class="f-title">地域独占メニューとして差別化</div>
+          <div class="f-sub">導入サロンには地域独占の仕組みが用意されており、価格競争に巻き込まれない独自ポジションを構築できる。</div>
+        </div>
+      </div>
+      <div class="feature-row">
+        <div class="f-num">4</div>
+        <div>
+          <div class="f-title">役務＋物販の同時展開</div>
+          <div class="f-sub">施術（役務）と関連商品（物販）を組み合わせた収益設計。リピートと単価の両方を高める。</div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="badge">INFORMATION GAP（記事化の好機）</div>
+      <div class="note" style="margin-top:0;line-height:1.8;">
+        <strong>現状のウェブ記事空白領域：</strong><br>
+        「バクチ甦生プログラム」を導入したサロンの声がウェブにほぼ存在しない。<br><br>
+        「バクチオール」×「エステ施術」×「サロン導入」を具体的に語る記事が不足。<br><br>
+        「ハーブピーリングに代わるメニュー」という検索ニーズに応える専門記事がない。
+      </div>
+      <!-- 施術データ -->
+      <div style="background:var(--white);border-radius:14px;padding:18px;border:1px solid var(--border);margin-top:16px;">
+        <div class="f-title" style="margin-bottom:12px;">📊 施術メニュー例（参考）</div>
+        <table>
+          <tr>
+            <th>コース</th>
+            <th>バクチオール</th>
+            <th>時間</th>
+          </tr>
+          <tr><td>プレミアム</td><td>6g</td><td>約70分</td></tr>
+          <tr><td>スタンダード</td><td>5g</td><td>約60分</td></tr>
+        </table>
+        <div style="font-size:11px;color:var(--sub);margin-top:8px;">※エステルームfranc（京都）公開情報より。メニュー・価格は各サロンにより異なります。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 4: AIDMA ===== -->
+<section>
+  <div class="sec-head">
+    <div class="sec-num">04</div>
+    <h2>導入決定に必要な情報が、ウェブに足りていない</h2>
+  </div>
 
   <div class="aidma">
     <div class="aidma-box">
       <div class="aidma-letter">A</div>
       <div class="aidma-name">注意</div>
-      <div class="aidma-desc">展示会・誌面・SNSで商品を知る</div>
+      <div class="aidma-desc">展示会・誌面・SNSで認知</div>
       <div class="aidma-tag">届いている</div>
     </div>
     <div class="aidma-arrow">▶</div>
     <div class="aidma-box hot">
       <div class="aidma-letter">I</div>
       <div class="aidma-name">関心</div>
-      <div class="aidma-desc">どんな商品か、実際どうかを調べる</div>
+      <div class="aidma-desc">実際のサロンでの声を探す</div>
       <div class="aidma-tag">情報が不足</div>
     </div>
     <div class="aidma-arrow">▶</div>
     <div class="aidma-box hot">
       <div class="aidma-letter">D</div>
       <div class="aidma-name">欲求</div>
-      <div class="aidma-desc">使いたいと思える導入事例を探す</div>
+      <div class="aidma-desc">経営への効果・導入後を想像する</div>
       <div class="aidma-tag">情報が不足</div>
     </div>
     <div class="aidma-arrow">▶</div>
     <div class="aidma-box hot">
       <div class="aidma-letter">M</div>
       <div class="aidma-name">記憶</div>
-      <div class="aidma-desc">印象に残り、比べるときに思い出す</div>
+      <div class="aidma-desc">比べるときに思い出せる情報が欲しい</div>
       <div class="aidma-tag">情報が不足</div>
     </div>
     <div class="aidma-arrow">▶</div>
@@ -350,174 +568,76 @@ footer{
   </div>
 
   <div class="hl-box">
-    関心・欲求・記憶を支える「第三者の声」が、ウェブ上に足りていません
-    <span>サロン専売品の導入レビューは、第三者が比較・評価できる場がほぼ皆無（当社調査 2026年9月）</span>
+    エス通WEBの第三者記事が、I・D・M フェーズの情報空白を埋めます
+    <span>2004年創刊・読者の90%が決裁権者のエステ業界最大専門媒体だから、信頼度が違います</span>
   </div>
 </section>
 
-<!-- ===== SECTION 2: BtoBでは他社の声が決め手 ===== -->
+<!-- ===== SECTION 5: 記事案 ===== -->
 <section>
   <div class="sec-head">
-    <div class="sec-num">02</div>
-    <h2>BtoBの導入では、他のサロンの声が決め手になります</h2>
-  </div>
-  <div class="cards-3">
-    <div class="card">
-      <div class="card-num" style="font-size:28px;">💰</div>
-      <div class="card-title">高額で、失敗できない</div>
-      <div class="card-sub">化粧品導入は継続コストも含め大きな判断。導入前に実績を慎重に比べます。</div>
-    </div>
-    <div class="card">
-      <div class="card-num" style="font-size:28px;">👩‍💼</div>
-      <div class="card-title">経営者自らが決める</div>
-      <div class="card-sub">エス通WEB読者の90%は決裁権者。導入後の売上を具体的に描けるかで判断します。</div>
-    </div>
-    <div class="card">
-      <div class="card-num" style="font-size:28px;">💬</div>
-      <div class="card-title">売り手の説明では足りない</div>
-      <div class="card-sub">メーカーの自社説明より、第三者記事や実際のサロンの声のほうが圧倒的に信頼されます。</div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== SECTION 3: 商材フォーカス ===== -->
-<section>
-  <div class="sec-head">
-    <div class="sec-num">03</div>
-    <h2>Lithap化粧品フォーカス——記事化する価値と根拠</h2>
-  </div>
-
-  <div class="img-grid">
-    <div class="ig-item">
-      <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=600&q=80&fit=crop" alt="Lithap化粧品イメージ" loading="lazy" onerror="this.parentElement.style.background='#FFE8F0'">
-      <div class="ig-caption">ミトコンドリア×自律神経 — 14年の研究が生んだサロン専売品</div>
-    </div>
-    <div class="ig-item">
-      <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&q=80&fit=crop" alt="スキンケアイメージ" loading="lazy" onerror="this.parentElement.style.background='#FFE8F0'">
-      <div class="ig-caption">細胞の自己甦生力にアプローチする次世代フォーミュラ</div>
-    </div>
-  </div>
-
-  <div class="two-col" style="margin-top:20px;">
-    <div>
-      <div class="badge">BRAND STRENGTH</div>
-      <div class="feature-row">
-        <div class="f-num">1</div>
-        <div>
-          <div class="f-title">14年の研究開発・店販率95%</div>
-          <div class="f-sub">直営店で18年以上・店販率95%以上を記録。「売らない販売法」で顧客が自然と購入する設計。</div>
-        </div>
-      </div>
-      <div class="feature-row">
-        <div class="f-num">2</div>
-        <div>
-          <div class="f-title">ミトコンドリア×自律神経理論</div>
-          <div class="f-sub">老化の根本原因「ミトコンドリア機能低下×自律神経の乱れ」に複合アプローチ。科学的根拠が明確。</div>
-        </div>
-      </div>
-      <div class="feature-row">
-        <div class="f-num">3</div>
-        <div>
-          <div class="f-title">年齢・肌タイプ不問の全9品</div>
-          <div class="f-sub">区分がないため在庫リスク低。サラコ・キラコ・プルコ等、スキンケア全工程をカバー。</div>
-        </div>
-      </div>
-      <div class="feature-row">
-        <div class="f-num">4</div>
-        <div>
-          <div class="f-title">リピート率90%以上</div>
-          <div class="f-sub">継続して使い続けたくなる価格設計（成分以外のコストカット）で顧客固定化を実現。</div>
-        </div>
-      </div>
-    </div>
-    <div>
-      <div class="badge">INFORMATION GAP（記事化の好機）</div>
-      <div class="note" style="margin-top:0;">
-        <strong>現状のウェブ記事空白領域：</strong><br>
-        「店販率95%」の実績を具体的なサロン経営者目線で語る記事が存在しない。<br><br>
-        「ミトコンドリア美容」「自律神経×肌」をサロン導入視点で解説した専門記事がない。<br><br>
-        「在庫負担を抑えながら物販強化」という経営課題と直結した記事が不足している。
-      </div>
-      <div style="background:var(--white);border-radius:14px;padding:18px;border:1px solid var(--border);margin-top:16px;">
-        <div class="f-title" style="margin-bottom:10px;">📦 商品ラインナップ（全9品）</div>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;font-size:12px;color:var(--sub);">
-          <span>🌿 サラコ（クレンジング）</span>
-          <span>✨ キラコ（ローション）</span>
-          <span>🌸 プレキラコ（鎮静）</span>
-          <span>💧 プルコ（クリーム）</span>
-          <span>☀️ マモルー（UVケア）</span>
-          <span>⚡ ホワイタリー（美容液）</span>
-          <span>🔬 ミトコ（サプリ）</span>
-          <span>✨ カーヴィー（炭酸）</span>
-          <span colspan="2">📱 ラッシュセラム（まつ毛美容）</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== SECTION 4: 記事案 ===== -->
-<section>
-  <div class="sec-head">
-    <div class="sec-num">04</div>
+    <div class="sec-num">05</div>
     <h2>推奨記事案 3本——テーマと根拠</h2>
   </div>
 
-  <!-- 記事①（メイン） -->
+  <!-- 記事① メイン -->
   <div class="art-card">
     <div class="art-type">★ メイン記事 ｜ 導入レビュー型</div>
-    <div class="art-title">「店販率95%の理由を聞いた——Lithap化粧品を導入したサロンオーナーが語る、顧客が"黙って買い続ける"化粧品の条件」</div>
-    <img src="https://images.unsplash.com/photo-1512207736890-6ffed8a84e8d?w=800&q=80&fit=crop" alt="化粧品導入イメージ" class="art-img" loading="lazy" onerror="this.style.display='none'">
+    <div class="art-title">「ハーブピーリングの限界を越えた——バクチ甦生プログラム導入で変わった施術と、3か月後の客単価」</div>
+    <img src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273?w=800&q=80&fit=crop" alt="エステサロン施術イメージ" class="art-img" loading="lazy" onerror="this.style.display='none'">
     <div class="art-reason">
       <strong>なぜこのテーマか：</strong>
-      「店販率95%」という実績は業界屈指の数値ですが、それを裏付ける具体的なサロン経営者の声がウェブ上にほぼ存在しません。
-      第三者メディアであるエス通WEBが「なぜ売れるのか」「導入前との違いは何か」を取材記事として公開することで、
-      情報収集中の経営者の「欲求」「記憶」フェーズに深く刺さります。
-      物販強化を検討しているサロン経営者が最も知りたい「結果の根拠」を、信頼性ある媒体で届けられます。
+      ハーブピーリングはダウンタイムがあり、敏感肌顧客への適用に課題があります。
+      このジレンマを抱えているサロン経営者は多く、「代わりになる施術を探している」層が検索で流入します。
+      実際に導入したサロンの「導入前後の比較」「客単価の変化」「リピート率」を具体的に語ることで、
+      情報収集中の経営者の「欲求」「記憶」に強く刺さる記事になります。
+      第三者メディアとしての信頼性が、メーカー自身の説明以上の説得力を生みます。
     </div>
     <div class="kw-row">
-      <span class="kw-tag">サロン専売化粧品 おすすめ</span>
-      <span class="kw-tag">店販 化粧品 サロン 選び方</span>
-      <span class="kw-tag">サロン 物販 リピート率</span>
-      <span class="kw-tag">Lithap リトハピ 口コミ</span>
+      <span class="kw-tag">ハーブピーリング 代替 新メニュー</span>
+      <span class="kw-tag">アンチエイジング 施術 サロン 導入</span>
+      <span class="kw-tag">バクチ甦生プログラム 口コミ</span>
+      <span class="kw-tag">エステ 新メニュー 肌再生</span>
     </div>
   </div>
 
   <!-- 記事② -->
   <div class="art-card sub">
     <div class="art-type">誘導記事① ｜ 検索キーワード型</div>
-    <div class="art-title">「"肌の自己再生力"から化粧品を選ぶ——ミトコンドリア理論が導く、次世代サロン専売品の基準」</div>
-    <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&q=80&fit=crop" alt="スキンケア成分イメージ" class="art-img" loading="lazy" onerror="this.style.display='none'">
+    <div class="art-title">「なぜ今"バクチオール"なのか——レチノールとの違いと、敏感肌サロンが選ぶ成分の最前線」</div>
+    <img src="https://images.unsplash.com/photo-1543199989-e1b2a0d6a823?w=800&q=80&fit=crop" alt="植物エキス・成分イメージ" class="art-img" loading="lazy" onerror="this.style.display='none'">
     <div class="art-reason">
       <strong>なぜこのテーマか：</strong>
-      「ミトコンドリア 美容」「自律神経 肌改善」は一般消費者向け記事が多く、
-      サロン経営者向けに「なぜ導入すべきか」「どう売るか」まで解説した専門記事が存在しません。
-      エス通WEBが先行的にこのニッチを取ることで、AIやGoogle検索で引用されやすい記事が生まれます。
-      Lithapの科学的背景を深掘りするコンテンツは、競合商品との差別化を明確にします。
+      「バクチオール レチノール 違い」は検索需要が急増中ですが、エステサロン経営者目線の専門記事がほぼありません。
+      消費者向けの比較記事はあっても、「サロンとして導入すべき理由」「施術に使える成分かどうか」を語ったコンテンツが不足しています。
+      エス通WEBがこのポジションを先行取得することで、成分トレンドの専門情報源として認識されます。
+      AIがこの比較を答えるとき、エス通の記事が根拠として引用されやすい構成になります。
     </div>
     <div class="kw-row">
-      <span class="kw-tag">ミトコンドリア 美容 サロン</span>
-      <span class="kw-tag">自律神経 肌 化粧品</span>
-      <span class="kw-tag">細胞再生 スキンケア プロ向け</span>
+      <span class="kw-tag">バクチオール レチノール 違い</span>
+      <span class="kw-tag">バクチオール 敏感肌 エステ</span>
+      <span class="kw-tag">バクチオール 効果 施術</span>
+      <span class="kw-tag">ダウンタイムなし アンチエイジング</span>
     </div>
   </div>
 
   <!-- 記事③ -->
   <div class="art-card sub">
     <div class="art-type">誘導記事② ｜ 検索キーワード型</div>
-    <div class="art-title">「在庫を抱えずに店販率を上げる——サロン専売化粧品の"賢い選び方"5つの基準」</div>
-    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&q=80&fit=crop" alt="サロン内装イメージ" class="art-img" loading="lazy" onerror="this.style.display='none'">
+    <div class="art-title">「地域で唯一のメニューをつくる——差別化施術で価格競争を脱出したサロンオーナーの選択基準」</div>
+    <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&q=80&fit=crop" alt="サロン経営者イメージ" class="art-img" loading="lazy" onerror="this.style.display='none'">
     <div class="art-reason">
       <strong>なぜこのテーマか：</strong>
-      在庫リスクと物販強化は多くのサロン経営者が抱える矛盾した悩みです。
-      Lithapは「年齢・肌タイプ不問の汎用設計」「小ロット発注可能」という特性で、
-      この課題に直接答えられます。商材名を前面に出さず、
-      経営課題起点で検索してきた読者を自然にLithapへ誘導するテーマ設計です。
+      「サロン 差別化」「競合と差別化したい」はサロン経営者が日常的に検索するテーマです。
+      バクチ甦生プログラムの「地域独占メニュー」という特性は、この課題に対する直接の答えになります。
+      商材名を前面に出さず、経営課題起点の読者を自然に「バクチ甦生プログラム」へ誘導するテーマ設計です。
+      「価格競争を脱出したサロンの実例」という切り口は、潜在層・顕在層の両方に刺さります。
     </div>
     <div class="kw-row">
-      <span class="kw-tag">サロン専売品 選び方 在庫</span>
-      <span class="kw-tag">店販率 上げる 化粧品</span>
-      <span class="kw-tag">サロン 物販強化 方法</span>
+      <span class="kw-tag">サロン 差別化 メニュー</span>
+      <span class="kw-tag">エステ 新メニュー 地域独占</span>
+      <span class="kw-tag">サロン 価格競争 脱出</span>
+      <span class="kw-tag">美容 フランチャイズ なし 独自</span>
     </div>
   </div>
 
@@ -532,50 +652,50 @@ footer{
         <th>優先度</th>
       </tr>
       <tr>
-        <td>サロン専売化粧品 おすすめ 店販</td>
-        <td>30〜50件/月</td>
-        <td>△（一般向け中心）</td>
+        <td>バクチオール レチノール 違い 比較</td>
+        <td>50〜100件/月</td>
+        <td>◯（消費者向け中心）</td>
         <td class="pri-h">★★★</td>
       </tr>
       <tr>
-        <td>ミトコンドリア 美容 サロン導入</td>
-        <td>15〜30件/月</td>
+        <td>ハーブピーリング 代替 新メニュー サロン</td>
+        <td>20〜40件/月</td>
         <td>✗（ほぼなし）</td>
         <td class="pri-h">★★★</td>
       </tr>
       <tr>
-        <td>店販率 上げる 化粧品 サロン</td>
+        <td>バクチオール エステ 施術 サロン</td>
+        <td>15〜30件/月</td>
+        <td>✗</td>
+        <td class="pri-h">★★★</td>
+      </tr>
+      <tr>
+        <td>サロン 差別化 メニュー 地域独占</td>
         <td>20〜35件/月</td>
         <td>◯（経営一般）</td>
         <td class="pri-m">★★</td>
       </tr>
       <tr>
-        <td>Lithap リトハピ 口コミ 効果</td>
-        <td>10〜20件/月</td>
-        <td>◯（@cosme等）</td>
-        <td class="pri-m">★★</td>
-      </tr>
-      <tr>
-        <td>自律神経 肌 化粧品 サロン</td>
-        <td>10〜20件/月</td>
-        <td>✗</td>
-        <td class="pri-m">★★</td>
-      </tr>
-      <tr>
-        <td>サロン専売 在庫 負担 解決</td>
+        <td>バクチ甦生プログラム 導入 口コミ</td>
         <td>5〜15件/月</td>
-        <td>✗</td>
-        <td>★</td>
+        <td>✗（指名検索）</td>
+        <td class="pri-m">★★</td>
+      </tr>
+      <tr>
+        <td>ダウンタイムなし アンチエイジング エステ</td>
+        <td>10〜20件/月</td>
+        <td>△</td>
+        <td class="pri-m">★★</td>
       </tr>
     </table>
     <div class="note">※推定値は上位表示コンテンツの量・競合状況から算出した定性的な推定レンジです。正式な検索ボリュームはGoogleキーワードプランナー等での計測を推奨します。</div>
   </div>
 </section>
 
-<!-- ===== SECTION 5: 記事構成 ===== -->
+<!-- ===== SECTION 6: 記事構成 ===== -->
 <section>
   <div class="sec-head">
-    <div class="sec-num">05</div>
+    <div class="sec-num">06</div>
     <h2>記事は5つの構成。AI検索対策（LLMO）にもなります</h2>
   </div>
 
@@ -583,49 +703,49 @@ footer{
     <div class="f5step">
       <div class="f5circle">1</div>
       <div class="f5title">導入の決め手</div>
-      <div class="f5sub">なぜLithapを選んだか。比べた商品は何か</div>
+      <div class="f5sub">なぜバクチ甦生を選んだか。比べた施術は何か</div>
     </div>
     <div class="f5arrow">▶</div>
     <div class="f5step">
       <div class="f5circle">2</div>
       <div class="f5title">使い方・使用感</div>
-      <div class="f5sub">実際の施術や店販での使い心地</div>
+      <div class="f5sub">実際の施術の流れと手技の使い心地</div>
     </div>
     <div class="f5arrow">▶</div>
     <div class="f5step">
       <div class="f5circle">3</div>
       <div class="f5title">お客様の反応</div>
-      <div class="f5sub">施術後の声、リピート・満足度</div>
+      <div class="f5sub">施術後の変化・リピート・満足度の声</div>
     </div>
     <div class="f5arrow">▶</div>
     <div class="f5step">
       <div class="f5circle">4</div>
       <div class="f5title">経営の変化</div>
-      <div class="f5sub">店販率・客単価・売上への影響</div>
+      <div class="f5sub">客単価・メニュー構成・売上への影響</div>
     </div>
     <div class="f5arrow">▶</div>
     <div class="f5step">
       <div class="f5circle">5</div>
       <div class="f5title">メーカーQ&A</div>
-      <div class="f5sub">導入前の疑問にメーカーが直接回答</div>
+      <div class="f5sub">導入前の疑問にLithapが直接回答</div>
     </div>
   </div>
 
   <div class="llmo-box">
     <div class="llmo-title">🤖 LLMO（AI検索対策）とは</div>
     <p style="font-size:13px;color:var(--sub);margin-bottom:16px;">
-      ChatGPT・Perplexity等のAIが回答する際、エス通WEBのQ&A構造記事が根拠として引用されやすくなります。
-      記事公開後も、AIへの露出資産として長期的に機能します。
+      ChatGPT・Perplexity等のAIが「バクチオールの施術って実際どうなの？」と聞かれた際、
+      エス通WEBのQ&A構造記事が根拠として引用されやすくなります。公開後も資産として長期的に機能します。
     </p>
     <div class="llmo-flow">
       <div class="llmo-step">
         <strong>🙋 サロン経営者がAIに質問</strong>
-        「Lithapってどんな化粧品？」「店販率を上げる化粧品は？」
+        「バクチ甦生プログラムってどんな施術？」「ハーブピーリングの代わりになる？」
       </div>
       <div class="llmo-arr">▶</div>
       <div class="llmo-step">
         <strong>🔍 AIがウェブから検索</strong>
-        Q&A構造・具体的なサロン事例・成分解説が充実した記事を探す
+        Q&A構造・具体的なサロン事例・成分比較が充実した記事を探す
       </div>
       <div class="llmo-arr">▶</div>
       <div class="llmo-step final">
@@ -636,10 +756,10 @@ footer{
   </div>
 </section>
 
-<!-- ===== SECTION 6: 拡散プラン ===== -->
+<!-- ===== SECTION 7: 拡散プラン ===== -->
 <section>
   <div class="sec-head">
-    <div class="sec-num">06</div>
+    <div class="sec-num">07</div>
     <h2>記事は公開して終わりではなく、サロン経営者に届け続けます</h2>
   </div>
 
@@ -689,10 +809,10 @@ footer{
   <div class="note">※数値は2024〜2026年に当社が管理したMeta広告の実績平均値（参考値）。成果を保証するものではありません。</div>
 </section>
 
-<!-- ===== SECTION 7: 料金プラン ===== -->
+<!-- ===== SECTION 8: 料金プラン ===== -->
 <section>
   <div class="sec-head">
-    <div class="sec-num">07</div>
+    <div class="sec-num">08</div>
     <h2>3つのプランと、今だけの特典</h2>
   </div>
   <div class="plans">
@@ -723,10 +843,10 @@ footer{
   <div class="note">すべて撮影なしのプランです。撮影ありはオプションで別途50,000円〜（税別）。プレミアムの特典は通常600,000円→特別価格でのご提供。金額はすべて税別。</div>
 </section>
 
-<!-- ===== SECTION 8: スケジュール ===== -->
+<!-- ===== SECTION 9: スケジュール ===== -->
 <section>
   <div class="sec-head">
-    <div class="sec-num">08</div>
+    <div class="sec-num">09</div>
     <h2>お申込みは12月11日（金）まで。1月中に基本公開します</h2>
   </div>
 
